@@ -7,6 +7,8 @@ import userRoutes from './routes/users.routes.js';
 
 const app = express();
 
+app.disable("x-powered-by");
+
 app.use(cors());
 app.use(express.json());
 app.use(logger);
