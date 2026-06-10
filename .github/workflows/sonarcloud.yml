@@ -22,7 +22,6 @@ jobs:
 
       - run: npm test
 
-      - uses: docs/example-action@b16d2601a6b948e2fb26f3772276581f31daa7cd
-
+      - uses: SonarSource/sonarcloud-github-action@master
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
